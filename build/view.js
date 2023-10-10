@@ -1,0 +1,1 @@
+console.log("Hello World! (from create-block-collapse block)"),function(){const e=document.querySelectorAll(".clb-simple-collapsible-content-inner");for(let l of e)l.parentNode.style.setProperty("--clb-simple-collapsible-content-height",l.offsetHeight+"px")}();

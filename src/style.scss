@@ -1,0 +1,79 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-clb-collapse {
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: var(--ironwood-primary-color, #333);
+
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	.clb-simple-collapse-toggle-label {
+		display: block;
+		text-align: center;
+		padding: 20px;
+		color: #fff;
+		cursor: pointer;
+		border-radius: var(--ironwood-border-radius, 3px);
+		transition: all 0.33s ease-out;
+		position: relative;
+	}
+
+	.clb-simple-collapse-toggle-label:hover {
+		color: #fff;
+	}
+
+	.clb-simple-collapse-toggle-label::before {
+		content: "\f347";
+		font-family: dashicons;
+		position: absolute;
+		right: 20px;
+		margin-left: 20px;
+	}
+
+	.clb-simple-toggle-input:checked + .clb-simple-collapse-toggle-label::before {
+		content: "\f343";
+		font-family: dashicons;
+	}
+
+	.clb-simple-collapsible-content {
+		max-height: 0px;
+		overflow: hidden;
+		transition: max-height 0.33s ease-in-out;
+	}
+
+	.clb-simple-toggle-input:checked + .clb-simple-collapse-toggle-label + .clb-simple-collapsible-content {
+		max-height: 350px;
+		max-height: var(--clb-simple-collapsible-content-height, 350px);
+		border-bottom-left-radius: var(--ironwood-border-radius, 3px);
+		border-bottom-right-radius: var(--ironwood-border-radius, 3px);
+	}
+
+	.clb-simple-toggle-input:checked + .clb-simple-collapse-toggle-label {
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.clb-simple-collapsible-content .clb-simple-collapsible-content-inner {
+		background: #f5f5f5;
+		padding: 30px;
+	}
+
+	.clb-simple-collapsible-content-inner p:last-of-type {
+		margin-bottom: 0;
+	}
+
+}
+
+
+  
+  
+
+  

@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/clb-collapse",
+	"version": "0.1.0",
+	"title": "Simple Collapse",
+	"category": "common",
+	"icon": "excerpt-view",
+	"description": "Custom Block for Simple Collapses",
+	"example": {},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": [ "none", "wide", "full" ],
+		"color": {
+			"gradients": true
+		}
+	},
+	"textdomain": "clb-collapse",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "text",
+			"selector": "div",
+			"default": ""
+		},
+		"uniqueId": {
+			"type": "string",
+			"default": ""
+		}
+	}
+
+}
